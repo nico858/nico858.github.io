@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Mande project</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.piecelabel.js"></script>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<!-- Note: The "styleN" class below should match that of the banner element. -->
+		<header id="header" class="alt style2">
+			<a href="index.html" class="logo"><strong>NicoNus</strong> <span>Portfolio</span></a>
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="landing.html">Landing</a></li>
+				<li><a href="generic.html">Generic</a></li>
+				<li><a href="elements.html">Elements</a></li>
+			</ul>
+			<ul class="actions stacked">
+				<li><a href="#" class="button primary fit">Get Started</a></li>
+				<li><a href="#" class="button fit">Log In</a></li>
+			</ul>
+		</nav>
+
+		<!-- Banner -->
+		<!-- Note: The "styleN" class below should match that of the header element. -->
+		<section id="banner" class="style2">
+			<div class="inner">
+				<span class="image">
+					<img src="images/pic07.jpg" alt="" />
+				</span>
+				<header class="major">
+					<h1>Mande</h1>
+				</header>
+				<div class="content">
+					<p>In this project we did a web where you can find for a worker or you can look for a job as a
+						worker. It works similar to LinkedIn</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- One -->
+			<section id="one">
+				<div class="inner">
+					<header class="major">
+						<h2>Technologies used</h2>
+					</header>
+					<p>The project was developed using React and Node, with SQL queries being used for data retrieval
+						from a PostgreSQL database. The frontend and backend were separated and utilized separate
+						technologies, with React handling the presentation layer and Node serving as the application
+						server. The project utilized a PostgreSQL database for data storage and management, with SQL
+						queries being used to interact with the database.</p>
+					<a href="https://github.com/nico858/mande">Project repository</a>
+				</div>
+			</section>
+
+			<!-- Two -->
+			<section id="two" class="spotlights">
+				<section>
+					<a href="generic.html" class="image">
+						<img src="images/tecnology.jpg" alt="" data-position="center center" />
+					</a>
+					<div class="content">
+						<div class="inner">
+							<header class="major">
+								<h3>Technical aspects</h3>
+							</header>
+							<p>In the following links you can check some technical aspects:</p>
+							<ul>
+								<li><a href="https://drive.google.com/file/d/1Ht7XYbnwYa9xHBpzIXxx9kCjHvmArSME/view">ER
+										Model</a></li>
+								<li><a href="https://drive.google.com/file/d/1i2fXB_MkT7XnIVPcp2Dwl3Qb1wuvf4p2/view">Relational
+										Model</a></li>
+								<li><a
+										href="https://docs.google.com/spreadsheets/d/1uj18evoFDo8sfn1plXibAsH2p5EwgcyZfV7awEb4AF0/edit#gid=0">Data
+										Dictionary</a></li>
+								<li><a href="https://drive.google.com/file/d/1b4vHjt8lN-ji6KU5eR1dE9b5VBh_yO2C/view">Use
+										cases</a></li>
+								<li><a
+										href="https://app.moqups.com/ndSVjRvz9qXlMYEq5g6HDBi9uKw1Bxjx/view/page/a3780764b?fit_width=1">Mockups
+										User Interface</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section>
+					<a href="generic.html" class="image">
+						<img src="images/learning.jpg" alt="" data-position="top center" />
+					</a>
+					<div class="content">
+						<div class="inner">
+							<header class="major">
+								<h3>What I learned</h3>
+							</header>
+							<p>This project was really important for me because I had never used react. With this
+								project I learned how to make a frontend and how to connect back and front. <br>
+								For this project we had to implement queries that weren't simple, so I improved a lot
+								doing this.</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<a href="generic.html" class="image">
+						<img src="images/languages.jpg" alt="" data-position="25% 25%" />
+					</a>
+					<div class="content">
+						<div class="inner">
+							<header class="major">
+								<h3>Languages used</h3>
+							</header>
+
+							<body>
+								<div style="width: 300px;">
+									<canvas  id="myChart"></canvas>
+								</div>
+
+								<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+								<script>
+									var ctx = document.getElementById('myChart').getContext('2d');
+									var myChart = new Chart(ctx, {
+										type: 'pie',
+										data: {
+											labels: ['JavaScript', 'HTML', 'CSS'],
+											datasets: [{
+												data: [92, 1.7, 6.3],
+												backgroundColor: [
+													'rgba(106, 90, 205, 0.7)',
+													'rgba(54, 162, 235, 0.7)',
+													'rgba(255, 206, 86, 0.7)'
+												],
+												borderColor: [
+													'rgba(255, 99, 132, 1)',
+													'rgba(54, 162, 235, 1)',
+													'rgba(255, 206, 86, 1)'
+												],
+												borderWidth: 1
+											}]
+										},
+										options: {
+											pieceLabel: {
+												render: 'percentage',
+												fontColor: 'white',
+												precision: 2
+											}
+										}
+									});
+								</script>
+							</body>
+						</div>
+					</div>
+				</section>
+			</section>
+
+			<!-- Contact -->
+
+			<section class="split">
+				<section>
+					<div class="contact-method">
+						<span class="icon solid alt fa-envelope"></span>
+						<h3>Email</h3>
+						<a href="mailto:nicolasurbanos10@gmail.com?subject=Job Offer">SEND MAIL</a>
+					</div>
+				</section>
+			</section>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://github.com/nico858" class="icon brands alt fa-github"><span
+									class="label">GitHub</span></a></li>
+						<li><a href="https://www.linkedin.com/in/nicolas-urbano/"
+								class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled</li>
+						<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
