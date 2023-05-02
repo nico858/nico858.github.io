@@ -3950,3 +3950,9 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+
+		#myChart {
+			width: 400px;
+			height: 400px;
+		}	
+		  
