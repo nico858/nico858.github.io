@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Mande project</title>
+	<title>Store Project</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -31,8 +31,8 @@
 		<nav id="menu">
 			<ul class="links">
 				<li><a href="index.html">Home</a></li>
-				<li><a href="store.html">Store</a></li>
 				<li><a href="mande.html">Mande project</a></li>
+				<li><a href="tasklist.html">Task List</a></li>
 				<li><a href="hangman.html">Hangman project</a></li>
 			</ul>
 		</nav>
@@ -45,10 +45,10 @@
 					<img src="images/pic07.jpg" alt="" />
 				</span>
 				<header class="major">
-					<h1>Task Managar</h1>
+					<h1>Store Project</h1>
 				</header>
 				<div class="content">
-					<p>This app allows you to add, edit and delete task to manage your assigments</p>
+					<p>There is a crud of the different tables with their appropriate associations. There is authentication and authorization, as well as mailing for password recovery.</p>
 				</div>
 			</div>
 		</section>
@@ -62,8 +62,16 @@
 					<header class="major">
 						<h2>Technologies used</h2>
 					</header>
-					<p>This task management application is built using JavaScript, CSS, and HTML on the client-side, and Node.js, React, and a database on the server-side. The front-end allows users to add, delete, and edit tasks, while the back-end manages data persistence and serves the API endpoints. React is used to render the dynamic user interface, while Node.js handles server-side operations and database management. The database stores the tasks and allows for efficient querying and retrieval of task data. Overall, this application leverages modern web technologies to provide an efficient and seamless user experience for managing tasks.</p>
-					<a href="https://github.com/nico858/taskslist">Project repository</a>
+					<p>The e-commerce project is built using a combination of technologies. Node.js serves as the core runtime environment, allowing the execution of JavaScript on the server-side. Express, a popular web framework for Node.js, is utilized to simplify the development of the web application. <br>
+
+						Different Node libraries enhance the functionality of the e-commerce platform. Nodemailer is used for sending emails, enabling communication with customers regarding order confirmations, shipping updates, etc. Passport, another Node library, aids in implementing authentication and authorization mechanisms, securing user access to the platform.<br>
+						
+						PostgreSQL, a powerful open-source relational database management system, serves as the backend database for storing and managing various e-commerce-related data, such as product information, user details, and order records. Sequelize, an ORM (Object-Relational Mapping) library for Node.js, simplifies the interaction with the PostgreSQL database, providing an intuitive way to define and execute database queries.<br>
+						
+						Docker is employed to containerize the application, enabling easy deployment and scalability. With Docker, the e-commerce platform can be packaged as a lightweight, self-sufficient unit, ensuring consistency and portability across different environments.<br>
+						
+						Swagger, an open-source tool, is used for designing, building, documenting, and consuming RESTful APIs. It provides a unified interface for developers to interact with the e-commerce platform's APIs, making it easier to test and understand the available endpoints and their functionalities.</p>
+					<a href="https://github.com/nico858/my-store">Project repository</a>
 				</div>
 			</section>
 
@@ -78,13 +86,16 @@
 							<header class="major">
 								<h3>Technical aspects</h3>
 							</header>
-							<p>There are some of the technologies used for this project. Documentation can be checked.</p>
+							<p>There are some of the technologies used for this project. Documentation can be checked in the route /docs.</p>
 							<ul>
 								<li>Postgres</li>
-								<li>SQL queries</li>
-								<li>React</li>
+								<li>Sequelize</li>
+								<li>Passport</li>
+								<li>Nodemailer</li>
 								<li>NodeJS</li>
 								<li>Docker</li>
+								<li>Postman</li>
+								<li>Swagger</li>
 							</ul>
 						</div>
 					</div>
@@ -98,7 +109,7 @@
 							<header class="major">
 								<h3>What I learned</h3>
 							</header>
-							<p>This project helped me to practice front and SQL queries</p>
+							<p>With this project I had to lean how to make the propper associations for the differnts tables with sequelize. I put into practice the authorization and authentication with the library passport. Also I used the nodemailer library in a simple way</p>
 						</div>
 					</div>
 				</section>
@@ -123,20 +134,14 @@
 									var myChart = new Chart(ctx, {
 										type: 'pie',
 										data: {
-											labels: ['JavaScript', 'HTML', 'DockerFile', 'CSS'],
+											labels: ['JavaScript'],
 											datasets: [{
-												data: [87.8, 2.5, 8.7, 1.0],
+												data: [100],
 												backgroundColor: [
 													'rgba(106, 90, 205, 0.7)',
-													'rgba(255, 0, 0, 0.7)',
-													'rgba(255, 206, 86, 0.7)',
-													'rgba(54, 162, 235, 0.7)'
 												],
 												borderColor: [
 													'rgba(255, 99, 132, 1)',
-													'rgba(255, 0, 0, 0.7)',
-													'rgba(255, 206, 86, 1)',
-													'rgba(54, 162, 235, 0.7)'
 												],
 												borderWidth: 1
 											}]
